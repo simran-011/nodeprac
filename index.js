@@ -1,6 +1,10 @@
-const apple = require("./apple");
-const mango = require("./mango");
-const orange = require("./orange");
+var figlet = require("figlet");
 
-let fruitArr = [apple, mango, orange];
-console.log(fruitArr);
+figlet("simran", function (err, data) {
+  if (err) {
+    console.log("Something went wrong...");
+    console.dir(err);
+    return;
+  }
+  console.log(data);
+});
